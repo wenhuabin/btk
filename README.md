@@ -1,4 +1,4 @@
-# This is my personal project
+# This is my personal web project
 
 - Builded with NodeJS as server
 - artTemplate-3.0 as HTML template
