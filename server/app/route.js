@@ -13,5 +13,10 @@ router.get('/:page', function (req, res, next) {
     res.sendFile(path.join(__dirname, '../../bin/404.html'));
 })
 
+router.get('/images/:img', function (req, res, next) {
+    console.log("get image");
+    res.sendFile(path.join(__dirname, '../../src/images/img'));
+})
+
 module.exports = router;
 
