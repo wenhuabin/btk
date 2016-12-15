@@ -11,7 +11,14 @@
         <div class="home-page">
             欢迎访问，我是行旅书读…
         </div>
-        <img src="../images/bike.png" />
+        <div id="content">
+        </div>
+        <script id="tpl" type="text/html">
+            <div class="main-page">
+                <img src={require('images/bike/png')} />
+                <div>{{hello}}</div>
+            </div>
+        </script>
     </div>
 </body>
 </html>
