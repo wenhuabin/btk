@@ -7,7 +7,7 @@ var data = {
 };
 
 window.onload = function(){
-    render();
+    //render();
 };
 
 function render(){
