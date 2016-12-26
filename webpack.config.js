@@ -11,6 +11,10 @@ const minifyConfig = {
         collapseWhitespace: true,
         removeAttributeQuotes: true
 };
+
+var SRC_PATH= path.resolve(__dirname, './src');
+console.log(SRC_PATH);
+
 var config = {
     entry: {
         index: './src/home/index'
@@ -39,6 +43,12 @@ var config = {
                     loader: 'url?limit=8192'
                 },
         ]
+    },
+    resolve: {
+        root:[SRC_PATH],
+        alias: {
+            'images':'images'
+        }
     },
     plugins: [
      new webpack.ProvidePlugin({

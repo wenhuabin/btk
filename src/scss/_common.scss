@@ -23,7 +23,7 @@ table {
 body {
     font-family: 'Microsoft Yahei', Helvetica, sans-serif;
     min-height: 100%;
-    background-color: #eee;
+    background-color: #fff;
     margin: 0 auto;
 }
 
@@ -54,65 +54,3 @@ input {
     // http://stackoverflow.com/questions/3062968/remove-textarea-inner-shadow-on-mobile-safari-iphone
     -webkit-appearance: none;
 }
-
-//header {
-//    position: relative;
-//    font-size: rem(30);
-//    background-color: #fd6e37;
-//    height: rem(90);
-//    line-height: rem(90);
-//    color: white;
-//    .back {
-//        display: inline-block;
-//        float: left;
-//        margin: rem(25) rem(15);
-//        width: rem(40);
-//        height: rem(40);
-//        background: url(../images/back.png) no-repeat;
-//        background-size: cover;
-//    }
-//    .head {
-//        float: left;
-//        background: url(../images/default-head-img.png) center no-repeat;
-//        background-size: cover;
-//        display: inline-block;
-//        width: rem(54);
-//        height: rem(54);
-//        border-radius: rem(27);
-//        margin: rem(18) rem(18) rem(18) 0;
-//    }
-//    .center {
-//        display: inline-block;
-//        position: absolute;
-//        width: 70%;
-//        left: 15%;
-//        color: #fff;
-//        white-space: nowrap;
-//        text-align: center;
-//    }
-//    .name {
-//        float: left;
-//    }
-//    .button {
-//        font-size: rem(24);
-//        display: inline-block;
-//        float: right;
-//        width: rem(120);
-//        color: white;
-//        text-align: center;
-//        padding: rem(10) 0;
-//        border: 1px solid white;
-//        border-radius: 3px;
-//        margin: rem(20) 0;
-//        height: rem(26);
-//        line-height: rem(26);
-//    }
-//    .link {
-//        font-size: rem(24);
-//        display: inline-block;
-//        float: right;
-//        color: white;
-//        width: rem(140);
-//        text-align: center;
-//    }
-//}

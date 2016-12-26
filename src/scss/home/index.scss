@@ -1,5 +1,105 @@
 @import '../_common';
 
-body{
-    color: red;
+
+.page{
+	margin: 0;
+    height: 100%;
+	padding-top: 15px;
+    overflow: hidden;
+	.header{
+		margin: auto;
+		width: 55%;
+		height: 30px;
+    	color: #444;
+    	font-family: "Avenir Next","Avenir","Helvetica Neue",sans-serif;
+    	text-transform: uppercase;
+    	text-decoration: none;
+		overflow: hidden;
+	}
+    .line {
+        margin-top: 30px;
+        height: 0;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .footer{
+		position: absolute;
+		bottom: 60px;
+		width: 100%;
+		padding: 10px 0 20px;
+    	text-align: center;
+    	border-top: 1px solid #eee;
+    	color: #999;
+    	font-size: 13px;
+    	font-family: "Optima","Helvetica Neue",sans-serif;
+    }
+}
+
+.header{
+	.bike,
+    .brand,
+	.nav-home,
+	.nav-about{
+		height: 30px;
+		position: relative;
+		display: inline-block;
+		line-height: 30px;
+	}
+	.bike{
+		float: left;
+		width: 30px;
+		height: 30px;
+		border-radius: 30px;
+	}
+	.brand{
+		margin-left: 10px;
+		float: left;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	.nav-home,
+	.nav-about{
+		width: 60px;
+		margin-left: 10px;
+		float: right;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	.nav-home{
+		opacity: 0.1;
+	}
+    .nav-home:hover{
+		opacity: 1;
+    }
+	.nav-about:hover{
+		font-size: 17px;
+	}
+}
+
+.profile{
+    margin: auto;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    .about{
+        margin: 30px 0 20px;
+        line-height: 60px;;
+        font-size: 28px;
+        font-weight: 300;
+		font-family: "Georgia","Xin Gothic","PingFang SC","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
+    	color: #222223;
+    }
+    .detail{
+        margin: 30px 0 30px;
+        font-size: 18px;
+        line-height: 40px;
+        font-family: "Lora","Xin Gothic","PingFang SC","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
+        color: #444443;
+    }
+    .skill{
+        font-size: 17px;
+
+    }
+    .state{
+        font-size: 14px;
+    }
 }
