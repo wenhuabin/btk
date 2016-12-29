@@ -6,7 +6,11 @@ var router = express.Router();
 var path = require('path');
 
 router.get('/', function (req, res, next) {
-    res.sendFile(path.join(__dirname, '../../bin/index.html'));
+    if(req.headers['user-agent'].match(/(iPhone|iPod|Android|ios|iPad)/i)){
+        res.sendFile(path.join(__dirname, '../../bin/404.html'));
+    }else{
+        res.sendFile(path.join(__dirname, '../../bin/index.html'));
+    }
 })
 
 router.get('/:page', function (req, res, next) {
