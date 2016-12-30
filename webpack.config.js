@@ -17,7 +17,8 @@ console.log(SRC_PATH);
 
 var config = {
     entry: {
-        index: './src/home/index'
+        index: './src/home/index',
+        mindex: './src/home/mindex',
     },
     output: {
         publicPath: './bin',
@@ -64,6 +65,13 @@ var config = {
       title: '读书旅行',
       template: './src/home/index.html',
       chunks: ['index'],
+      minify: minifyConfig
+     }),
+     new HtmlWebpackPlugin({
+      filename: 'mindex.html',
+      title: '读书旅行',
+      template: './src/home/index.html',
+      chunks: ['mindex'],
       minify: minifyConfig
      }),
      new HtmlWebpackPlugin({
