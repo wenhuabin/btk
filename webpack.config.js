@@ -70,7 +70,7 @@ var config = {
      new HtmlWebpackPlugin({
       filename: 'mindex.html',
       title: '读书旅行',
-      template: './src/home/index.html',
+      template: './src/home/mindex.html',
       chunks: ['mindex'],
       minify: minifyConfig
      }),
