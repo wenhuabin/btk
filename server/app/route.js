@@ -31,5 +31,18 @@ router.get('/bin/js/:name', function (req, res, next) {
     res.sendFile(path.join(__dirname, '../../bin/js/'+req.params.name));
 })
 
+//api that return json data
+router.get('/api/user/:uid', function (req, res, next) {
+    console.log("get");
+    console.log(req.params.uid);
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify({
+        id: req.params.uid,
+        name: '行旅书读',
+        sex: 'male',
+        age: '24',
+        phone: '12244445555'
+    }));
+})
 module.exports = router;
 
