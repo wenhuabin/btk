@@ -19,6 +19,7 @@ var config = {
     entry: {
         index: './src/home/index',
         mindex: './src/home/mindex',
+        rem: './src/rem.js',
     },
     output: {
         publicPath: './bin',
@@ -71,7 +72,7 @@ var config = {
       filename: 'mindex.html',
       title: '读书旅行',
       template: './src/home/mindex.html',
-      chunks: ['mindex'],
+      chunks: ['mindex', 'rem'],
       minify: minifyConfig
      }),
      new HtmlWebpackPlugin({
