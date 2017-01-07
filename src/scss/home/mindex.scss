@@ -4,109 +4,101 @@
 .page{
 	margin: 0;
     height: 100%;
-	padding-top: 60px;
+	padding-top: rem(40px);
     overflow: hidden;
 	.header{
 		margin: auto;
-		width: 90%;
-		height: 1.875rem;
+        width: 90%;
+		height: rem(30px);
     	color: #444;
     	font-family: "Avenir Next","Avenir","Helvetica Neue",sans-serif;
     	text-transform: uppercase;
     	text-decoration: none;
 		overflow: hidden;
-	} .line {
-        margin-top: 30px;
-        height: 0;
-        border-bottom: 1px solid #f5f5f5;
-    }
+	}
     .footer{
-        margin-top: 30px;
+        margin-top: rem(30px);
 		width: 100%;
-		padding: 10px 0 20px;
+		padding: rem(10px) 0 rem(20px);
     	text-align: center;
     	border-top: 1px solid #eee;
     	color: #999;
-    	font-size: .8125rem;
+    	font-size: rem(18px);
     	font-family: "Optima","Helvetica Neue",sans-serif;
     }
 }
 
 .header{
-	.bike,
+	.logo,
     .brand,
 	.nav-home,
 	.nav-about{
-		height: 1.875rem;
+		height: rem(30px);
 		position: relative;
 		display: inline-block;
-		line-height: 1.875rem;
+		line-height: rem(30px);
 	}
-	.bike{
+	.logo{
 		float: left;
-		width: 1.875rem;
-		height: 1.875rem;
-		border-radius: 30px;
+		width: rem(30px);
+		height: rem(30px);
+		border-radius: 50%;
 	}
 	.brand{
-		margin-left: 10px;
+		margin-left: rem(10px);
 		float: left;
-		font-size: 1.5rem;
-		font-weight: 300;
+		font-size: rem(28px);
+		font-weight: 400;
 	}
 	.nav-home,
 	.nav-about{
-		width: 3.75rem;
-		margin-left: 10px;
+		width: rem(70px);
+		margin-left: rem(10px);
 		float: right;
-		font-size: 1rem;
+		font-size: rem(20px);
 		cursor: pointer;
 	}
 	.nav-home{
 		opacity: 0.1;
 	}
-    .nav-home:hover{
-		opacity: 1;
-    }
-	.nav-about:hover{
-		font-size: 1.0625rem;
-	}
 }
 
 .profile{
-    margin: auto;
-    width: 76%;
+    margin-left: 12%;
+    margin-top: rem(80px);
+    width: 80%;
     height: auto;
     overflow: hidden;
-    .about{
-        margin: 50px 0 20px;
-        line-height: 60px;;
-        font-size: 1.75rem;
-        font-weight: 300;
-		font-family: "Georgia","Xin Gothic","PingFang SC","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
-    	color: #222223;
-    }
     .detail{
-        margin: 40px 0 40px;
-        font-size: 1.125rem;
-        line-height: 2.5rem;
+        margin-bottom: rem(40px);
+        font-size: rem(24px);
+        line-height: rem(36px);
         font-family: "Lora","Xin Gothic","PingFang SC","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
         color: #444443;
     }
     p{
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 rem(5px);
+    }
+    .items{
+        padding-top: 0;
+        margin: 0;
+        .item{
+            font-size: rem(24px);
+            line-height: rem(40px);
+            font-family: "Lora","Xin Gothic","PingFang SC","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
+            color: #444443;
+        }
     }
     .skill{
-        font-size: 1.0625rem;
-
+        margin-bottom: rem(15px);
+        font-size: rem(24px);
     }
     .state,
     .shadow{
-        font-size: 0.875rem;
+        font-size: rem(20px);
     }
     .shadow{
-        margin-bottom: -30px;
-
+        margin-bottom: rem(20px);
     }
 }
